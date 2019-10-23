@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 //adding promise library to mongoose
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://yurka:1234@68.183.201.75:27017/timesheet", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb://user:pwd@ip:27017/timesheet", {useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => {
     console.log('Database connection successful')
   })
